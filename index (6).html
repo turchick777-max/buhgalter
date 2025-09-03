@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Бухгалтерские и налоговые услуги — Ворожейкин А.О.</title>
+  <meta name="description" content="Бухгалтерские услуги, сдача отчетности, регистрация ИП и ООО. Ворожейкин Александр Олегович — 10 лет опыта. Онлайн и офлайн услуги по всей России." />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {margin:0;font-family:'Roboto',sans-serif;background:#f4f7fa;color:#333}
+    header {background:url('https://images.unsplash.com/photo-1581090700227-1e8f7bfa2f6d?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;color:#fff;text-align:center;padding:100px 20px;position:relative}
+    header::after {content:'';position:absolute;inset:0;background:rgba(0,0,0,0.5)}
+    header>div{position:relative;z-index:1}
+    header h1{font-size:36px;margin:0 0 10px}
+    header p{font-size:18px;margin-bottom:30px}
+    .btn{background:#ffcc00;color:#000;padding:12px 24px;border-radius:8px;font-weight:700;display:inline-block;transition:0.3s}
+    .btn:hover{background:#e6b800}
+    section{padding:60px 20px;max-width:1100px;margin:auto}
+    h2{color:#004080;margin-bottom:20px;font-size:26px}
+    .grid{display:grid;gap:20px}
+    .services,.prices,.reviews{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+    .card{background:#fff;border-radius:8px;padding:20px;box-shadow:0 4px 10px rgba(0,0,0,0.05)}
+    .card img{width:100%;border-radius:6px;margin-bottom:10px}
+    footer{background:#004080;color:#fff;text-align:center;padding:20px}
+    form input,form textarea,form select{width:100%;padding:10px;border:1px solid #ccc;border-radius:6px;margin-top:6px;font-family:inherit}
+    form button{margin-top:10px}
+    .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    @media(max-width:600px){.row{grid-template-columns:1fr}header h1{font-size:24px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Бухгалтерские и налоговые услуги</h1>
+      <p>Ворожейкин Александр Олегович — 10 лет опыта</p>
+      <a href="#contact" class="btn">Получить консультацию</a>
+    </div>
+  </header>
+  <section id="about">
+    <h2>О специалисте</h2>
+    <p><strong>Ворожейкин Александр Олегович</strong> — бухгалтер с опытом более 10 лет. Ведение ИП и ООО на всех системах налогообложения. Работаем дистанционно по всей России.</p>
+  </section>
+  <section id="services">
+    <h2>Услуги</h2>
+    <div class="grid services">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1588776814546-62d7bcbcc0b3?auto=format&fit=crop&w=800&q=80" alt="Ведение учета">
+        <h3>Ведение бухгалтерии</h3>
+        <p>Полный учет для ИП и ООО: УСН, ОСНО, патент.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1605902711622-cfb43c4437d3?auto=format&fit=crop&w=800&q=80" alt="Сдача отчетности">
+        <h3>Сдача отчетности</h3>
+        <p>Декларации и отчеты в ФНС, ПФР, ФСС вовремя.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=800&q=80" alt="Регистрация бизнеса">
+        <h3>Регистрация бизнеса</h3>
+        <p>Помощь с ИП и ООО, выбор системы налогообложения.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=80" alt="Консультации">
+        <h3>Консультации</h3>
+        <p>Налоговое планирование и разбор вопросов.</p>
+      </div>
+    </div>
+  </section>
+  <section id="prices">
+    <h2>Цены</h2>
+    <div class="grid prices">
+      <div class="card">
+        <h3>ИП на УСН</h3>
+        <p>от 3 500 ₽/мес</p>
+      </div>
+      <div class="card">
+        <h3>ООО на УСН/ОСНО</h3>
+        <p>от 9 900 ₽/мес</p>
+      </div>
+      <div class="card">
+        <h3>Разовые услуги</h3>
+        <p>по договоренности</p>
+      </div>
+    </div>
+  </section>
+  <section id="reviews">
+    <h2>Отзывы</h2>
+    <div class="grid reviews">
+      <div class="card"><p>«Отчеты всегда вовремя, бухгалтер на связи 24/7» — Елена, ИП</p></div>
+      <div class="card"><p>«Помогла с регистрацией и налогами, рекомендую!» — Роман, ООО</p></div>
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Контакты</h2>
+    <form onsubmit="alert('Заявка отправлена');return false;">
+      <div class="row">
+        <div><label>Имя</label><input type="text" required></div>
+        <div><label>Телефон</label><input type="tel" required></div>
+      </div>
+      <div class="row">
+        <div><label>Email</label><input type="email"></div>
+        <div><label>Услуга</label><select><option>Ведение учета</option><option>Отчетность</option><option>Регистрация</option><option>Консультация</option></select></div>
+      </div>
+      <label>Комментарий</label>
+      <textarea rows="4"></textarea>
+      <button class="btn">Отправить</button>
+    </form>
+  </section>
+  <footer>© 2025 Ворожейкин А.О. Бухгалтерские услуги</footer>
+</body>
+</html>
